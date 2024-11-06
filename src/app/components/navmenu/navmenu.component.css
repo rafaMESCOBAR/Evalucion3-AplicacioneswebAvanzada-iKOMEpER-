@@ -1,0 +1,75 @@
+/* estilos.css */
+.nosotros {
+    font-family: Arial, sans-serif;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: center; /* Centra el contenido de la navbar */
+    align-items: center;
+    background-color: rgba(0, 0, 255, 0.3); /* Fondo azul transparente con opacidad */
+    padding: 10px 20px;
+    position: fixed; /* Para hacer que la barra de navegación esté fija en la parte superior */
+    width: 100%; /* Ocupa todo el ancho */
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Asegura que la barra de navegación esté encima de otros elementos */
+  }
+  
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin-right: 20px; /* Espacio entre el logo y los botones */
+  }
+  
+  .navbar-brand img {
+    height: 40px;
+  }
+  
+  .navbar-toggler {
+    border: none;
+    background: transparent;
+  }
+  
+  .navbar-collapse {
+    display: flex;
+    justify-content: center; /* Centra el menú */
+  }
+  
+  .navbar-nav {
+    display: flex;
+    gap: 20px; /* Mayor espacio entre los elementos del menú */
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .nav-item {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav-link {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 5px 10px;
+  }
+  
+  .nav-link:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Efecto hover en los enlaces */
+    border-radius: 5px;
+  }
+  
+  @media (max-width: 991px) {
+    .navbar-collapse {
+      flex-direction: column; /* Cambia la dirección de los items en pantallas pequeñas */
+      align-items: center; /* Centra los items en pantallas pequeñas */
+    }
+  
+    .navbar-nav {
+      width: 100%;
+      gap: 10px;
+    }
+  }
+  

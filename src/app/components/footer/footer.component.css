@@ -1,0 +1,134 @@
+/* Footer */
+#footer {
+  background-color: #000; /* Fondo negro */
+  color: #fff; /* Texto blanco */
+  padding: 40px 0;
+}
+
+/* Sección superior del footer */
+#footer .footer-top {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #444; /* Línea sutil para separar la sección */
+}
+
+/* Título principal del footer */
+#footer h3 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #e00000; /* Rojo para el título */
+  margin-bottom: 20px;
+}
+
+/* Descripción en la primera columna */
+#footer .footer-contact p {
+  font-size: 1rem;
+  color: #ccc; /* Gris claro */
+  margin-bottom: 20px;
+}
+
+/* Iconos de redes sociales */
+#footer .social-links {
+  text-align: center;
+}
+
+#footer .social-links a {
+  font-size: 1.5rem;
+  margin: 0 10px;
+  color: #fff; /* Color blanco para los iconos */
+  transition: color 0.3s ease;
+}
+
+#footer .social-links a:hover {
+  color: #e00000; /* Rojo al hacer hover */
+}
+
+/* Caja de información en la columna derecha */
+#footer .info-box {
+  background-color: #222; /* Fondo gris oscuro */
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  color: #fff; /* Texto blanco */
+}
+
+#footer .info-box i {
+  font-size: 2rem;
+  color: #e00000; /* Rojo para los iconos */
+  margin-right: 10px;
+}
+
+#footer .info-box h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#footer .info-box p {
+  font-size: 1rem;
+  color: #ccc; /* Gris claro */
+}
+
+/* Links en la columna 2 */
+#footer .footer-links h4 {
+  font-size: 1.3rem;
+  color: #e00000; /* Rojo para los títulos de los links */
+  margin-bottom: 20px;
+}
+
+#footer .footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+#footer .footer-links ul li {
+  margin-bottom: 10px;
+}
+
+#footer .footer-links ul li a {
+  color: #fff; /* Color blanco para los links */
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+#footer .footer-links ul li a:hover {
+  color: #e00000; /* Rojo al hacer hover */
+}
+
+/* Sección de créditos */
+#footer .credits {
+  font-size: 0.9rem;
+  color: #ccc; /* Gris claro */
+  text-align: center;
+}
+
+/* Estilos para el pie de página en pantallas pequeñas */
+@media (max-width: 768px) {
+  #footer .container {
+      padding: 20px;
+  }
+
+  #footer .footer-top {
+      padding-bottom: 10px;
+  }
+
+  #footer .social-links {
+      text-align: center;
+      margin-top: 20px;
+  }
+
+  #footer .footer-contact,
+  #footer .footer-links,
+  #footer .info-box {
+      margin-bottom: 20px;
+  }
+
+  #footer .footer-links ul {
+      text-align: center;
+  }
+
+  #footer .footer-links ul li {
+      display: inline-block;
+      margin-right: 15px;
+  }
+}

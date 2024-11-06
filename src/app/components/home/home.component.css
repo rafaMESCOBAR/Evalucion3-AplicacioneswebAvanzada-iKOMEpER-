@@ -1,0 +1,84 @@
+/* Aseguramos que el body y html no tengan márgenes y rellenos que puedan causar el espacio extra */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%; /* Asegura que ocupe toda la altura de la pantalla */
+  width: 100%;  /* Asegura que ocupe todo el ancho de la pantalla */
+  overflow-x: hidden; /* Evita desbordamiento horizontal */
+}
+
+/* Ajustes en la home */
+.home {
+  position: relative;
+  padding-top: 60px; /* Ajustamos el padding-top para que el banner no se sobreponga a la navbar */
+}
+
+/* Banner */
+.banner {
+  position: relative;
+  height: calc(100vh - 60px); /* El banner ocupa toda la altura de la ventana menos la altura de la navbar */
+  background-image: url('/images/hero-bg.png');
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* Asegura que el banner ocupe todo el ancho */
+  margin: 0; /* Eliminamos márgenes extra */
+  padding: 0; /* Eliminamos rellenos extra */
+}
+
+/* Fondo negro del overlay */
+.banner-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Fondo negro con opacidad */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Estilos del texto dentro del banner */
+.banner-text {
+  text-align: center;
+  padding: 20px;
+}
+
+.banner-text h2 {
+  font-size: 2.5rem; /* Aumenté el tamaño del texto */
+  margin: 0;
+}
+
+.banner-text p {
+  font-size: 1.2rem;
+  margin-top: 10px; /* Espacio entre el título y el párrafo */
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .banner-text h2 {
+    font-size: 1.8rem; /* Reduce el tamaño del texto */
+  }
+
+  .banner-text p {
+    font-size: 1rem;
+  }
+}
+
+/* Navbar */
+.navbar {
+  position: fixed; /* Asegura que la navbar esté fija en la parte superior */
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999; /* Asegura que la navbar esté encima del banner */
+  width: 100%;
+  background-color: rgba(0, 0, 128, 0.7); /* Fondo transparente azul */
+  padding: 10px 20px;
+  margin: 0;
+  box-sizing: border-box;
+}

@@ -1,0 +1,106 @@
+/* Contact Section */
+#contact {
+  background-color: #f4f4f4; /* Fondo gris claro en lugar de negro */
+  color: #333; /* Texto en gris oscuro para mayor contraste */
+  padding: 60px 20px;
+  box-sizing: border-box;
+}
+
+/* Título de la sección */
+#contact .section-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+#contact .section-title h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #e00000; /* Rojo para el título */
+}
+
+#contact .section-title p {
+  font-size: 1.2rem;
+  color: #555;  /* Gris medio para el texto */
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Contenedor para el mapa y el formulario */
+#contact .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centra el contenido en el contenedor */
+  gap: 20px; /* Espacio entre las columnas */
+  max-width: 1200px; /* Limita el ancho máximo para mejor apariencia */
+  margin: 0 auto; /* Centra el contenedor */
+}
+
+/* Mapa */
+#contact iframe {
+  width: 100%;
+  height: 400px; /* Reducido para que encaje mejor */
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos del formulario */
+#contact form {
+  background-color: #fff; /* Fondo blanco para el formulario */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra más suave */
+  width: 100%;
+  max-width: 550px; /* Máximo ancho del formulario */
+  margin-top: 0; /* Sin margen superior para que se acerque al mapa */
+}
+
+/* Campos del formulario */
+#contact .form-control {
+  background-color: #f9f9f9; /* Fondo blanco para los campos de formulario */
+  color: #333; /* Texto gris oscuro */
+  border: 1px solid #ddd; /* Borde gris claro */
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
+
+/* Estilo cuando el campo está enfocado */
+#contact .form-control:focus {
+  border-color: #e00000; /* Borde rojo cuando el campo está seleccionado */
+  box-shadow: 0 0 5px rgba(224, 0, 0, 0.5); /* Sombra roja al seleccionar */
+}
+
+/* Estilo del botón */
+#contact button[type="submit"] {
+  background-color: #e00000; /* Rojo para el botón */
+  border: none;
+  color: #fff;
+  font-size: 1rem;
+  padding: 15px 30px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+#contact button[type="submit"]:hover {
+  background-color: #c40000; /* Rojo más oscuro al hacer hover */
+  cursor: pointer;
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 768px) {
+  #contact .row {
+    flex-direction: column;
+    gap: 15px; /* Menor espacio entre mapa y formulario en pantallas pequeñas */
+  }
+
+  #contact iframe {
+    height: 300px; /* Reducir la altura del mapa en pantallas pequeñas */
+  }
+
+  #contact form {
+    margin-top: 0; /* Eliminar margen superior */
+  }
+}

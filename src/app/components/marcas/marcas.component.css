@@ -1,0 +1,92 @@
+/* Asegurarse de que el fondo del body sea negro */
+body {
+  background-color: #000000; /* Fondo negro para el cuerpo */
+  margin: 0;
+  padding: 0;
+  color: #fff; /* Color de texto blanco para el cuerpo */
+}
+
+/* Estilos generales para la sección de marcas */
+#marca {
+  padding: 60px 20px;
+  background-color: #000;  /* Fondo negro para la sección de marcas */
+  color: #fff; /* Color de texto blanco para que resalte en el fondo negro */
+  box-sizing: border-box;  /* Asegura que el padding no afecte el tamaño total */
+  margin-top: 60px; /* Espacio superior para no superponerse al contenido anterior */
+}
+
+/* Título de la sección */
+#marca .section-title h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #e00000; /* Rojo para el título */
+}
+
+#marca .section-title p {
+  font-size: 1.2rem;
+  text-align: center;
+  color: #bbb;  /* Gris claro para el texto */
+  max-width: 700px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+/* Estilo para las tarjetas de marcas */
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;  /* Asegura que la tarjeta ocupe todo el espacio disponible */
+  background-color: #333; /* Fondo gris oscuro para las tarjetas */
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  color: #fff; /* Color de texto blanco dentro de las tarjetas */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%; /* Asegura que todas las tarjetas tengan la misma altura */
+  justify-content: space-between; /* Para distribuir el espacio de forma uniforme entre el contenido */
+}
+
+/* Imagen dentro de la tarjeta */
+.card-img-top {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+/* Estilo para el contenido de la tarjeta */
+.card-body {
+  padding: 20px;
+  flex-grow: 1; /* Hace que el contenido ocupe el espacio restante de la tarjeta */
+}
+
+.card-text {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #fff; /* Texto blanco dentro de la tarjeta */
+}
+
+/* Efecto hover para las tarjetas */
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+/* Ajuste del grid para las tarjetas */
+.row-cols-md-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas en pantallas medianas */
+  gap: 30px; /* Añadir espacio entre las tarjetas (vertical y horizontal) */
+  max-width: 1200px;
+  margin: 0 auto; /* Centra las tarjetas dentro de la sección */
+}
+
+/* Ajustes para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .row-cols-md-3 {
+    grid-template-columns: 1fr; /* En pantallas pequeñas, mostrar solo una columna */
+  }
+}
